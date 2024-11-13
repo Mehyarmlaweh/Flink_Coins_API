@@ -15,27 +15,72 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.14.0</version> <!-- You can change this version to the latest available -->
+        </dependency>
 
-        <!-- Kafka Dependencies -->
+        <!-- Jackson Core (core module for JSON processing) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.14.0</version> <!-- Same here, you can use the latest version -->
+        </dependency>
+
+        <!-- Jackson Annotations (for annotations like @JsonProperty, etc.) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.14.0</version> <!-- Ensure version is consistent with the others -->
+        </dependency>
+
+        <!-- Flink Core (version 1.4.2 to match the scala version) -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-java</artifactId>
+            <version>1.4.2</version> <!-- Updated version to match the scala version -->
+        </dependency>
+
+        <!-- This dependency is unchanged as per your request -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-streaming-scala_2.11</artifactId>
+            <version>1.4.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-kafka</artifactId>
+            <version>3.2.0-1.18</version>
+        </dependency>
+
+        <!-- SLF4J Logging (Required by Flink) -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+
+        <!-- Kafka Consumer (for Kafka connection) -->
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-clients</artifactId>
             <version>3.9.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-streaming-java_2.12</artifactId>
-            <version>1.20.0</version>
-        </dependency>
-        <!-- Jackson dependencies (for JSON parsing) -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.15.0</version> <!-- Choose the appropriate version -->
-        </dependency>
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>apache-flink</id>
+            <url>https://repository.apache.org/content/repositories/releases/</url>
+        </repository>
+    </repositories>
+
 </project>
-
-
-

@@ -13,7 +13,7 @@ import java.net.URL;
 import java.util.Properties;
 import java.util.Scanner;
 
-public class CryptoDataProducer {
+    public class CryptoDataProducer {
     private static final String TOPIC = "crypto_data";
     private static final String[] CRYPTOS = {"bitcoin", "ethereum"};
     private static final String API_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd";
