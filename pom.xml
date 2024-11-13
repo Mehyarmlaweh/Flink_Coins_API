@@ -15,32 +15,25 @@
     </properties>
 
     <dependencies>
-    <!-- Kafka Client -->
-    <dependency>
-        <groupId>org.apache.kafka</groupId>
-        <artifactId>kafka-clients</artifactId>
-        <version>3.9.0</version>
-    </dependency>
 
-    <!-- Flink Dependencies -->
-    <dependency>
-        <groupId>org.apache.flink</groupId>
-        <artifactId>flink-core</artifactId>
-        <version>1.20.0</version>
-    </dependency>
-    <dependency>
-        <groupId>org.apache.flink</groupId>
-        <artifactId>flink-streaming-java_2.12</artifactId>
-        <version>1.20.0</version>
-    </dependency>
-
-    <!-- JSON Parsing (Jackson) -->
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>2.15.0</version>
-    </dependency>
-</dependencies>
+        <!-- Kafka Dependencies -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>3.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-streaming-java_2.12</artifactId>
+            <version>1.20.0</version>
+        </dependency>
+        <!-- Jackson dependencies (for JSON parsing) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.15.0</version> <!-- Choose the appropriate version -->
+        </dependency>
+    </dependencies>
 
 </project>
 
