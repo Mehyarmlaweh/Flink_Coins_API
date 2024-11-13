@@ -41,7 +41,7 @@ This project demonstrates the use of Apache Flink to ingest, process, and analyz
 
 ## Example Output
 
-### Flink Output:
+### Kafka Output:
 
 Here is a sample output you may see printed on the console:
 
@@ -71,7 +71,7 @@ bitcoin: $91456 ethereum: $3302.5
 ...
 ```
 
-### Kafka Output:
+### Flink Output:
 ```
 Processing crypto data...
 
